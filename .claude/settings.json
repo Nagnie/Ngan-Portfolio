@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /tmp/design)",
+      "Bash(tar -xzf \"C:\\\\Users\\\\trant\\\\.claude\\\\projects\\\\d--Portfolio\\\\7e5b3504-e0bb-46f7-a1e5-7cc4965c0a0b\\\\tool-results\\\\webfetch-1777902566725-fatqs2.bin\" -C /tmp/design)",
+      "Read(//c/Users/trant/AppData/Local/Temp/design/**)",
+      "PowerShell($assetsSrc = \"C:\\\\Users\\\\trant\\\\AppData\\\\Local\\\\Temp\\\\design\\\\portfolio\\\\project\\\\assets\"; $assetsDst = \"d:\\\\Portfolio\\\\public\\\\assets\"; New-Item -ItemType Directory -Path $assetsDst -Force | Out-Null; Copy-Item \"$assetsSrc\\\\avatar.jpg\" $assetsDst -Force; Copy-Item \"$assetsSrc\\\\resume.pdf\" $assetsDst -Force; Get-ChildItem $assetsDst)",
+      "PowerShell(npm install --no-audit --no-fund 2>&1)",
+      "PowerShell(npm run build 2>&1)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}

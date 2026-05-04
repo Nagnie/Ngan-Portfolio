@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "name": "Ngan Tran",
+    "shortName": "NGAN.TRAN",
+    "version": "v2026.04",
+    "availability": "Available · Q2 2026",
+    "title": "Ngan Tran / Portfolio · 26",
+    "brand": "NT / FE-STACK",
+    "location": "HCMC · GMT+7",
+    "timezone": "Asia/Ho_Chi_Minh"
+  },
+  "nav": [
+    { "id": "hero", "num": "00", "label": "Index" },
+    { "id": "work", "num": "01", "label": "Work" },
+    { "id": "academy", "num": "02", "label": "Projects" },
+    { "id": "stack", "num": "03", "label": "Stack" },
+    { "id": "edu", "num": "04", "label": "Edu" },
+    { "id": "contact", "num": "05", "label": "Contact" }
+  ],
+  "navFoot": [
+    { "label": "→ CV.PDF", "href": "/assets/resume.pdf" },
+    { "label": "→ Github", "href": "https://github.com/Nagnie" },
+    { "label": "→ LinkedIn", "href": "https://linkedin.com/in/trthngan101" }
+  ],
+  "hero": {
+    "role": "Junior Fullstack Engineer",
+    "from": "Ho Chi Minh City",
+    "to": "Anywhere",
+    "title": [
+      { "text": "Frontend-" },
+      { "text": "leaning", "italic": true },
+      { "text": "fullstack.", "outline": true }
+    ],
+    "avatarSrc": "/assets/avatar.jpg",
+    "avatarTag": "NGAN · 26",
+    "bio": "I'm <strong>Ngan</strong> — I ship <em>Atlassian Forge apps</em> at DevSamurai by day and study Software Engineering at VNUHCM by night. I care about performant UIs, types that tell the truth, and the details between the first pixel and the last.",
+    "stats": [
+      { "label": "Role", "value": "FS · FE-heavy" },
+      { "label": "Shipped", "value": "3+ apps" },
+      { "label": "GPA", "value": "3.7 / 4.0" }
+    ]
+  },
+  "marquee": ["TYPESCRIPT", "REACT", "NODE", "FORGE", "POSTGRES", "GRAPHQL", "NEXT"],
+  "work": {
+    "company": "DevSamurai",
+    "role": "Fullstack",
+    "tagline": "→ Atlassian Forge apps · PM, HR, Productivity",
+    "period": "DevSamurai · 2025 — Now",
+    "from": "08.2025",
+    "to": "Now",
+    "duration": "1+ yr",
+    "tags": ["React", "TypeScript", "Forge", "Node", "ForgeSQL", "Jira API", "Agile"],
+    "projects": [
+      {
+        "num": "01",
+        "title": "Config Pro",
+        "titleEm": "— gating & tour",
+        "description": "Built a feature-gating layer with an interactive onboarding tour that guides users through premium functionality. Lifted feature discoverability and opened a clean monetization path.",
+        "video": "https://www.youtube.com/embed/hUE6bbh-qAY?autoplay=1",
+        "videoLabel": "PLAY · YT · 2 MIN"
+      },
+      {
+        "num": "02",
+        "title": "HR App",
+        "titleEm": "— Directory & Org tree",
+        "description": "Implemented Employee Directory and Org Hierarchy modules — searchable listing, reporting chains, and a virtualized org chart capable of rendering thousands of nodes without drops.",
+        "link": {
+          "href": "https://www.canva.com/design/DAHAzpsWYv4/P_DMLQ_4Nldgxy3lHwAWxQ/watch",
+          "label": "Canva product demo"
+        }
+      },
+      {
+        "num": "03",
+        "title": "Gantt Chart app",
+        "titleEm": "— zero to one",
+        "description": "Led end-to-end development: timeline rendering, drag-reschedule, dependency graph with critical-path highlighting, and a virtualized row layer for large task sets.",
+        "video": "https://www.youtube.com/embed/K3jT8fvelNM?autoplay=1",
+        "videoLabel": "PLAY · YT · 3 MIN"
+      }
+    ]
+  },
+  "academy": [
+    {
+      "idx": "[01]",
+      "tag": "2024 · MOBILE",
+      "title": "Lexi",
+      "titleEm": "/ Vocab SRS",
+      "description": "Spaced-repetition app with AI example sentences and per-word audio. React Native + Express + Postgres.",
+      "stack": "RN · TS · NODE",
+      "linkLabel": "DEMO ↗",
+      "link": "#",
+      "thumb": "lexi"
+    },
+    {
+      "idx": "[02]",
+      "tag": "2024 · WEB",
+      "title": "Kindred",
+      "titleEm": "/ Book club",
+      "description": "Social reading: shared shelves, chapter threads, ratings. Next.js · Drizzle · Postgres.",
+      "stack": "NEXT · PG",
+      "linkLabel": "SITE ↗",
+      "link": "#",
+      "thumb": "kindred"
+    },
+    {
+      "idx": "[03]",
+      "tag": "2023 · WEB",
+      "title": "Pulse",
+      "titleEm": "/ Habits",
+      "description": "Habit tracker with streak analytics.",
+      "stack": "D3 · REACT",
+      "linkLabel": "DEMO ↗",
+      "link": "#",
+      "thumb": "pulse"
+    },
+    {
+      "idx": "[04]",
+      "tag": "2023 · SYSTEMS",
+      "title": "Mini-C",
+      "titleEm": "/ Toy compiler",
+      "description": "Statically-typed mini language: lexer, parser, type checker, x86 codegen. C++.",
+      "stack": "C++ · LLVM-LIKE",
+      "linkLabel": "GH ↗",
+      "link": "#",
+      "thumb": "minic"
+    }
+  ],
+  "stack": [
+    {
+      "title": "// Languages",
+      "items": ["TypeScript", "JavaScript", "C++", "C#", "Java", "Python", "HTML / CSS"]
+    },
+    {
+      "title": "// Frameworks",
+      "items": ["React", "Next.js", "Node.js", "Express", "Redux", "Tailwind", "Jest"]
+    },
+    {
+      "title": "// Data",
+      "items": ["PostgreSQL", "MS SQL Server", "ForgeSQL", "Drizzle ORM", "REST", "GraphQL"]
+    },
+    {
+      "title": "// Tools",
+      "items": ["Git / GitHub", "Bitbucket", "Docker", "Postman", "Figma", "VS Code"]
+    }
+  ],
+  "edu": {
+    "school": "University of Science",
+    "schoolEm": "/ VNUHCM",
+    "degree": "B.S. Software Engineering · 2022 — 2026 (Expected)",
+    "gpa": "3.7",
+    "gpaSub": "GPA / 4.0"
+  },
+  "contact": {
+    "headline": [
+      { "text": "Let's build" },
+      { "text": "something real.", "italic": true }
+    ],
+    "email": "trthngan101@gmail.com",
+    "links": [
+      {
+        "label": "// Github",
+        "value": "@Nagnie →",
+        "href": "https://github.com/Nagnie"
+      },
+      {
+        "label": "// LinkedIn",
+        "value": "in/trthngan101 →",
+        "href": "https://linkedin.com/in/trthngan101"
+      },
+      {
+        "label": "// Résumé",
+        "value": "Download PDF →",
+        "href": "/assets/resume.pdf"
+      }
+    ],
+    "footer": {
+      "left": "© 2026 / NGAN.TRAN · ALL.RIGHTS.OK",
+      "right": "Handcoded · No templates"
+    }
+  }
+}
