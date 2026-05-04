@@ -26,6 +26,10 @@ export type WorkSection = {
   projects: WorkProject[];
 };
 
+export type AcademyFeature = { title: string; body: string };
+export type AcademyTechGroup = { label: string; items: string[] };
+export type AcademyRepo = { label: string; href: string };
+
 export type AcademyCard = {
   idx: string;
   tag: string;
@@ -35,7 +39,18 @@ export type AcademyCard = {
   stack: string;
   linkLabel: string;
   link: string;
-  thumb: "lexi" | "kindred" | "pulse" | "minic";
+  thumb: "lexi" | "kindred" | "pulse" | "minic" | "prolearning";
+  featured?: boolean;
+  slug?: string;
+  period?: string;
+  role?: string;
+  status?: string;
+  live?: string;
+  repos?: AcademyRepo[];
+  overview?: string[];
+  features?: AcademyFeature[];
+  techStack?: AcademyTechGroup[];
+  contributions?: string;
 };
 
 export type StackColumn = { title: string; items: string[] };

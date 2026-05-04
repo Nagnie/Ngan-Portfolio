@@ -82,6 +82,45 @@
   "academy": [
     {
       "idx": "[01]",
+      "tag": "2025 → 2026 · THESIS · FULLSTACK",
+      "title": "ProLearning",
+      "titleEm": "/ AI learning system",
+      "description": "AI-powered learning platform that turns notes, files, and URLs into flashcards, exams, and study plans — then nudges you back when you get things wrong. My senior thesis.",
+      "stack": "REACT · TS · RN · SPRING · PG · GEMINI",
+      "linkLabel": "CASE STUDY ↗",
+      "link": "/projects/prolearning",
+      "thumb": "prolearning",
+      "featured": true,
+      "slug": "prolearning",
+      "period": "11.2025 — 06.2026",
+      "role": "Full-stack · FE lead",
+      "status": "Live · Deployed",
+      "live": "https://prolearning.io.vn/",
+      "repos": [
+        { "label": "Backend · Spring Boot", "href": "https://github.com/AnkineyTN/ProlearningPlatform" },
+        { "label": "Frontend · React", "href": "https://github.com/AnkineyTN/ProlearningPlatform_Frontend" }
+      ],
+      "overview": [
+        "An intelligent learning platform that helps users <em>retain</em> knowledge — not just access it. In the age of AI, information is easier to find than ever, but harder to truly remember. ProLearning bridges that gap by combining AI-generated study materials with structured review cycles, keeping knowledge active and long-term.",
+        "A full-stack web &amp; mobile application where users organize learning content into <strong>Sets</strong>, each containing <strong>Notes</strong>, <strong>Flashcards</strong>, and <strong>Exams</strong>. The AI layer generates flashcards and exams from user notes, uploaded files, or web URLs — and tracks what users get wrong to surface it again later."
+      ],
+      "features": [
+        { "title": "AI generation", "body": "Generate flashcards & exams from notes, uploaded files, or web URLs via Gemini." },
+        { "title": "Spaced review", "body": "Weekly review notifications surface questions users previously got wrong." },
+        { "title": "Roadmap generator", "body": "AI builds a full study plan — notes, flashcards, exams, and daily to-dos — from a single goal like \"Master React in 1 month\"." },
+        { "title": "Goal tracking", "body": "Track learning goals with linked daily and weekly tasks." },
+        { "title": "Pomodoro timer", "body": "Built-in focused study sessions wired to the active set." }
+      ],
+      "techStack": [
+        { "label": "Frontend", "items": ["React", "TypeScript", "React Native"] },
+        { "label": "Backend", "items": ["Java Spring Boot", "REST API"] },
+        { "label": "Data", "items": ["PostgreSQL"] },
+        { "label": "AI", "items": ["Gemini API"] }
+      ],
+      "contributions": "Owned the frontend architecture and led a full UI redesign mid-project to improve consistency and user experience. On the backend (Java Spring Boot), built and integrated several core modules including To-do, Goal tracking, Activity Log, and User Management, alongside various supporting features."
+    },
+    {
+      "idx": "[02]",
       "tag": "2024 · MOBILE",
       "title": "Lexi",
       "titleEm": "/ Vocab SRS",
@@ -92,7 +131,7 @@
       "thumb": "lexi"
     },
     {
-      "idx": "[02]",
+      "idx": "[03]",
       "tag": "2024 · WEB",
       "title": "Kindred",
       "titleEm": "/ Book club",
@@ -103,7 +142,7 @@
       "thumb": "kindred"
     },
     {
-      "idx": "[03]",
+      "idx": "[04]",
       "tag": "2023 · WEB",
       "title": "Pulse",
       "titleEm": "/ Habits",
@@ -114,7 +153,7 @@
       "thumb": "pulse"
     },
     {
-      "idx": "[04]",
+      "idx": "[05]",
       "tag": "2023 · SYSTEMS",
       "title": "Mini-C",
       "titleEm": "/ Toy compiler",

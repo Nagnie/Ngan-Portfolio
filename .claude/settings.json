@@ -7,7 +7,9 @@
       "PowerShell($assetsSrc = \"C:\\\\Users\\\\trant\\\\AppData\\\\Local\\\\Temp\\\\design\\\\portfolio\\\\project\\\\assets\"; $assetsDst = \"d:\\\\Portfolio\\\\public\\\\assets\"; New-Item -ItemType Directory -Path $assetsDst -Force | Out-Null; Copy-Item \"$assetsSrc\\\\avatar.jpg\" $assetsDst -Force; Copy-Item \"$assetsSrc\\\\resume.pdf\" $assetsDst -Force; Get-ChildItem $assetsDst)",
       "PowerShell(npm install --no-audit --no-fund 2>&1)",
       "PowerShell(npm run build 2>&1)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(dir d:\\\\Portfolio /b)",
+      "Bash(npx next *)"
     ]
   }
 }
