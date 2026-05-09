@@ -6,6 +6,7 @@ import type { AcademyCard } from "@/data/types";
 import { StatusBar } from "@/components/StatusBar";
 import { CustomCursor } from "@/components/CustomCursor";
 import { AcademyThumb } from "@/components/AcademyThumbs";
+import { ProlearningGallery } from "@/components/ProlearningGallery";
 
 type Params = { slug: string };
 
@@ -71,9 +72,13 @@ export default function ProjectPage({ params }: { params: Params }) {
           <h2 id="preview">
             What it <em>looks like</em>
           </h2>
-          <div className="acard-thumb" style={{ maxWidth: 900 }}>
-            <AcademyThumb kind={card.thumb} />
-          </div>
+          {card.slug === "prolearning" ? (
+            <ProlearningGallery />
+          ) : (
+            <div className="acard-thumb" style={{ maxWidth: 900 }}>
+              <AcademyThumb kind={card.thumb} />
+            </div>
+          )}
         </section>
 
         {card.overview && card.overview.length > 0 && (

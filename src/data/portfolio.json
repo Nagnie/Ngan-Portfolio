@@ -2,7 +2,7 @@
   "meta": {
     "name": "Ngan Tran",
     "shortName": "NGAN.TRAN",
-    "version": "v2026.04",
+    "version": "v2026.05",
     "availability": "Available · Q2 2026",
     "title": "Ngan Tran / Portfolio · 26",
     "brand": "NT / FE-STACK",
@@ -31,16 +31,24 @@
       { "text": "leaning", "italic": true },
       { "text": "fullstack.", "outline": true }
     ],
-    "avatarSrc": "/assets/avatar.jpg",
-    "avatarTag": "NGAN · 26",
-    "bio": "I'm <strong>Ngan</strong> — I ship <em>Atlassian Forge apps</em> at DevSamurai by day and study Software Engineering at VNUHCM by night. I care about performant UIs, types that tell the truth, and the details between the first pixel and the last.",
+    "avatarSrc": "/assets/avatar.png",
+    "avatarTag": "NGAN",
+    "bio": "I'm <strong>Thao Ngan</strong> — <em>Frontend-focused developer</em> with 9 months of production experience building Atlassian Forge apps. Passionate about performance-heavy UIs and AI-integrated products.",
     "stats": [
       { "label": "Role", "value": "FS · FE-heavy" },
       { "label": "Shipped", "value": "3+ apps" },
       { "label": "GPA", "value": "3.7 / 4.0" }
     ]
   },
-  "marquee": ["TYPESCRIPT", "REACT", "NODE", "FORGE", "POSTGRES", "GRAPHQL", "NEXT"],
+  "marquee": [
+    "TYPESCRIPT",
+    "REACT",
+    "NODE",
+    "FORGE",
+    "POSTGRES",
+    "GRAPHQL",
+    "NEXT"
+  ],
   "work": {
     "company": "DevSamurai",
     "role": "Fullstack",
@@ -48,34 +56,42 @@
     "period": "DevSamurai · 2025 — Now",
     "from": "08.2025",
     "to": "Now",
-    "duration": "1+ yr",
-    "tags": ["React", "TypeScript", "Forge", "Node", "ForgeSQL", "Jira API", "Agile"],
+    "duration": "9 months",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Forge",
+      "Node",
+      "ForgeSQL",
+      "Jira API",
+      "Agile"
+    ],
     "projects": [
       {
-        "num": "01",
-        "title": "Config Pro",
-        "titleEm": "— gating & tour",
-        "description": "Built a feature-gating layer with an interactive onboarding tour that guides users through premium functionality. Lifted feature discoverability and opened a clean monetization path.",
-        "video": "https://www.youtube.com/embed/hUE6bbh-qAY?autoplay=1",
-        "videoLabel": "PLAY · YT · 2 MIN"
+        "num": "03",
+        "title": "PlanCore",
+        "titleEm": "— Gantt Chart",
+        "description": "Sole developer of the Gantt Chart module (FE + BE) from scratch for a large-scale project management app. Built a high-performance timeline view handling 5,000+ issues with drag-and-drop, inline editing, duplicate, and multi-level task hierarchy.",
+        "video": "https://www.youtube.com/embed/K3jT8fvelNM?autoplay=1",
+        "videoLabel": "PLAY · YT · 3 MIN"
       },
       {
         "num": "02",
-        "title": "HR App",
-        "titleEm": "— Directory & Org tree",
-        "description": "Implemented Employee Directory and Org Hierarchy modules — searchable listing, reporting chains, and a virtualized org chart capable of rendering thousands of nodes without drops.",
+        "title": "HumanCore",
+        "titleEm": "— Directory & Org chart",
+        "description": "Developed Employee Directory, Org Chart/Hierarchy, and Job Assignment features for an HR management app. First project with significant backend involvement on the Atlassian Forge platform.",
         "link": {
           "href": "https://www.canva.com/design/DAHAzpsWYv4/P_DMLQ_4Nldgxy3lHwAWxQ/watch",
           "label": "Canva product demo"
         }
       },
       {
-        "num": "03",
-        "title": "Gantt Chart app",
-        "titleEm": "— zero to one",
-        "description": "Led end-to-end development: timeline rendering, drag-reschedule, dependency graph with critical-path highlighting, and a virtualized row layer for large task sets.",
-        "video": "https://www.youtube.com/embed/K3jT8fvelNM?autoplay=1",
-        "videoLabel": "PLAY · YT · 3 MIN"
+        "num": "01",
+        "title": "ProductGo",
+        "titleEm": "— Kanban & monetization",
+        "description": "Extended and stabilized a Custom Kanban feature in a 5–6 year-old User Story Mapping codebase. Implemented onboarding tour and configured Advanced App monetization on Atlassian Marketplace — first in the company to do so.",
+        "video": "https://www.youtube.com/embed/hUE6bbh-qAY?autoplay=1",
+        "videoLabel": "PLAY · YT · 2 MIN"
       }
     ]
   },
@@ -93,99 +109,109 @@
       "featured": true,
       "slug": "prolearning",
       "period": "11.2025 — 06.2026",
-      "role": "Full-stack · FE lead",
+      "role": "Full-stack · Lead team",
       "status": "Live · Deployed",
       "live": "https://prolearning.io.vn/",
       "repos": [
-        { "label": "Backend · Spring Boot", "href": "https://github.com/AnkineyTN/ProlearningPlatform" },
-        { "label": "Frontend · React", "href": "https://github.com/AnkineyTN/ProlearningPlatform_Frontend" }
+        {
+          "label": "Backend · Spring Boot",
+          "href": "https://github.com/AnkineyTN/ProlearningPlatform"
+        },
+        {
+          "label": "Frontend · React",
+          "href": "https://github.com/AnkineyTN/ProlearningPlatform_Frontend"
+        }
       ],
       "overview": [
         "An intelligent learning platform that helps users <em>retain</em> knowledge — not just access it. In the age of AI, information is easier to find than ever, but harder to truly remember. ProLearning bridges that gap by combining AI-generated study materials with structured review cycles, keeping knowledge active and long-term.",
         "A full-stack web &amp; mobile application where users organize learning content into <strong>Sets</strong>, each containing <strong>Notes</strong>, <strong>Flashcards</strong>, and <strong>Exams</strong>. The AI layer generates flashcards and exams from user notes, uploaded files, or web URLs — and tracks what users get wrong to surface it again later."
       ],
       "features": [
-        { "title": "AI generation", "body": "Generate flashcards & exams from notes, uploaded files, or web URLs via Gemini." },
-        { "title": "Spaced review", "body": "Weekly review notifications surface questions users previously got wrong." },
-        { "title": "Roadmap generator", "body": "AI builds a full study plan — notes, flashcards, exams, and daily to-dos — from a single goal like \"Master React in 1 month\"." },
-        { "title": "Goal tracking", "body": "Track learning goals with linked daily and weekly tasks." },
-        { "title": "Pomodoro timer", "body": "Built-in focused study sessions wired to the active set." }
+        {
+          "title": "AI generation",
+          "body": "Generate flashcards & exams from notes, uploaded files, or web URLs via Gemini."
+        },
+        {
+          "title": "Spaced review",
+          "body": "Weekly review notifications surface questions users previously got wrong."
+        },
+        {
+          "title": "Roadmap generator",
+          "body": "AI builds a full study plan — notes, flashcards, exams, and daily to-dos — from a single goal like \"Master React in 1 month\"."
+        },
+        {
+          "title": "Goal tracking",
+          "body": "Track learning goals with linked daily and weekly tasks."
+        },
+        {
+          "title": "Pomodoro timer",
+          "body": "Built-in focused study sessions wired to the active set."
+        }
       ],
       "techStack": [
-        { "label": "Frontend", "items": ["React", "TypeScript", "React Native"] },
+        {
+          "label": "Frontend",
+          "items": ["React", "TypeScript", "React Native"]
+        },
         { "label": "Backend", "items": ["Java Spring Boot", "REST API"] },
         { "label": "Data", "items": ["PostgreSQL"] },
         { "label": "AI", "items": ["Gemini API"] }
       ],
       "contributions": "Owned the frontend architecture and led a full UI redesign mid-project to improve consistency and user experience. On the backend (Java Spring Boot), built and integrated several core modules including To-do, Goal tracking, Activity Log, and User Management, alongside various supporting features."
-    },
-    {
-      "idx": "[02]",
-      "tag": "2024 · MOBILE",
-      "title": "Lexi",
-      "titleEm": "/ Vocab SRS",
-      "description": "Spaced-repetition app with AI example sentences and per-word audio. React Native + Express + Postgres.",
-      "stack": "RN · TS · NODE",
-      "linkLabel": "DEMO ↗",
-      "link": "#",
-      "thumb": "lexi"
-    },
-    {
-      "idx": "[03]",
-      "tag": "2024 · WEB",
-      "title": "Kindred",
-      "titleEm": "/ Book club",
-      "description": "Social reading: shared shelves, chapter threads, ratings. Next.js · Drizzle · Postgres.",
-      "stack": "NEXT · PG",
-      "linkLabel": "SITE ↗",
-      "link": "#",
-      "thumb": "kindred"
-    },
-    {
-      "idx": "[04]",
-      "tag": "2023 · WEB",
-      "title": "Pulse",
-      "titleEm": "/ Habits",
-      "description": "Habit tracker with streak analytics.",
-      "stack": "D3 · REACT",
-      "linkLabel": "DEMO ↗",
-      "link": "#",
-      "thumb": "pulse"
-    },
-    {
-      "idx": "[05]",
-      "tag": "2023 · SYSTEMS",
-      "title": "Mini-C",
-      "titleEm": "/ Toy compiler",
-      "description": "Statically-typed mini language: lexer, parser, type checker, x86 codegen. C++.",
-      "stack": "C++ · LLVM-LIKE",
-      "linkLabel": "GH ↗",
-      "link": "#",
-      "thumb": "minic"
     }
   ],
   "stack": [
     {
       "title": "// Languages",
-      "items": ["TypeScript", "JavaScript", "C++", "C#", "Java", "Python", "HTML / CSS"]
+      "items": [
+        "TypeScript",
+        "JavaScript",
+        "C++",
+        "C#",
+        "Java",
+        "Python",
+        "HTML / CSS"
+      ]
     },
     {
       "title": "// Frameworks",
-      "items": ["React", "Next.js", "Node.js", "Express", "Redux", "Tailwind", "Jest"]
+      "items": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express",
+        "Redux",
+        "Tailwind",
+        "Jest"
+      ]
     },
     {
       "title": "// Data",
-      "items": ["PostgreSQL", "MS SQL Server", "ForgeSQL", "Drizzle ORM", "REST", "GraphQL"]
+      "items": [
+        "PostgreSQL",
+        "MS SQL Server",
+        "ForgeSQL",
+        "Drizzle ORM",
+        "REST",
+        "GraphQL"
+      ]
     },
     {
       "title": "// Tools",
-      "items": ["Git / GitHub", "Bitbucket", "Docker", "Postman", "Figma", "VS Code"]
+      "items": [
+        "Git / GitHub",
+        "Bitbucket",
+        "Docker",
+        "Postman",
+        "Figma",
+        "VS Code"
+      ]
     }
   ],
   "edu": {
     "school": "University of Science",
     "schoolEm": "/ VNUHCM",
-    "degree": "B.S. Software Engineering · 2022 — 2026 (Expected)",
+    "degree": "B.S. Software Engineering · 2022 — 2026",
     "gpa": "3.7",
     "gpaSub": "GPA / 4.0"
   },
