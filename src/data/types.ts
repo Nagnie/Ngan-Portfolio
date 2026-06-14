@@ -39,7 +39,7 @@ export type AcademyCard = {
   stack: string;
   linkLabel: string;
   link: string;
-  thumb: "lexi" | "kindred" | "pulse" | "minic" | "prolearning";
+  thumb: "lexi" | "kindred" | "pulse" | "minic" | "prolearning" | "memorymap";
   featured?: boolean;
   slug?: string;
   period?: string;

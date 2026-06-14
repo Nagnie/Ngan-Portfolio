@@ -2,19 +2,11 @@
 
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const SLIDES: { src: string; alt: string }[] = [
-  { src: require("@/data/images/prolearning/Screenshot 2026-05-09 at 17.43.55 copy.png").default, alt: "ProLearning — Home" },
-  { src: require("@/data/images/prolearning/Screenshot 2026-05-09 at 17.49.53 copy.png").default, alt: "ProLearning — Flashcards" },
-  { src: require("@/data/images/prolearning/Screenshot 2026-05-09 at 17.52.53.png").default, alt: "ProLearning — Study set" },
-  { src: require("@/data/images/prolearning/Screenshot 2026-05-09 at 17.53.50.png").default, alt: "ProLearning — Roadmap" },
-  { src: require("@/data/images/prolearning/Screenshot 2026-05-09 at 17.54.38.png").default, alt: "ProLearning — Review" },
-];
+import type { Slide } from "@/data/galleryImages";
 
 const INTERVAL = 3800;
 
-export function ProlearningSlideshow() {
+export function ProjectSlideshow({ slides, label }: { slides: Slide[]; label: string }) {
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
   const timerKey = useRef(0);
@@ -24,16 +16,16 @@ export function ProlearningSlideshow() {
     timerKey.current += 1;
   };
 
-  const next = () => goTo((current + 1) % SLIDES.length);
+  const next = () => goTo((current + 1) % slides.length);
 
   useEffect(() => {
     if (paused) return;
     const id = setTimeout(() => {
-      setCurrent((c) => (c + 1) % SLIDES.length);
+      setCurrent((c) => (c + 1) % slides.length);
       timerKey.current += 1;
     }, INTERVAL);
     return () => clearTimeout(id);
-  }, [current, paused]);
+  }, [current, paused, slides.length]);
 
   return (
     <div
@@ -45,7 +37,7 @@ export function ProlearningSlideshow() {
       aria-label="Next screenshot"
     >
       {/* Slides */}
-      {SLIDES.map((s, i) => (
+      {slides.map((s, i) => (
         <div key={i} className={`pl-slide${i === current ? " is-active" : ""}`}>
           <Image
             src={s.src}
@@ -60,15 +52,15 @@ export function ProlearningSlideshow() {
 
       {/* Top overlay */}
       <div className="pl-overlay-top">
-        <span className="pl-label">PROLEARNING · SCREENSHOTS</span>
+        <span className="pl-label">{label}</span>
         <span className="pl-counter">
-          {String(current + 1).padStart(2, "0")}&thinsp;/&thinsp;{String(SLIDES.length).padStart(2, "0")}
+          {String(current + 1).padStart(2, "0")}&thinsp;/&thinsp;{String(slides.length).padStart(2, "0")}
         </span>
       </div>
 
       {/* Progress bars */}
       <div className="pl-bars">
-        {SLIDES.map((_, i) => (
+        {slides.map((_, i) => (
           <button
             key={i}
             className="pl-bar-track"

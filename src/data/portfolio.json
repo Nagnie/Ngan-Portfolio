@@ -158,6 +158,21 @@
         { "label": "AI", "items": ["Gemini API"] }
       ],
       "contributions": "Owned the frontend architecture and led a full UI redesign mid-project to improve consistency and user experience. On the backend (Java Spring Boot), built and integrated several core modules including To-do, Goal tracking, Activity Log, and User Management, alongside various supporting features."
+    },
+    {
+      "idx": "[02]",
+      "tag": "2026 · PERSONAL · MOBILE",
+      "title": "MemoryMap",
+      "titleEm": "/ Map-based memories",
+      "description": "A cross-platform mobile app that pins your photos to the exact spot they happened — save memories on a map, share a real-time Duo Map with a partner, and capture moments offline.",
+      "stack": "REACT NATIVE · EXPO · SUPABASE",
+      "linkLabel": "CASE STUDY ↗",
+      "link": "/projects/memorymap",
+      "thumb": "memorymap",
+      "slug": "memorymap",
+      "period": "2026",
+      "role": "Mobile · Solo",
+      "status": "In progress"
     }
   ],
   "stack": [
@@ -166,17 +181,18 @@
       "items": [
         "TypeScript",
         "JavaScript",
+        "HTML / CSS",
         "C++",
         "C#",
         "Java",
-        "Python",
-        "HTML / CSS"
+        "Python"
       ]
     },
     {
       "title": "// Frameworks",
       "items": [
         "React",
+        "React Native",
         "Next.js",
         "Node.js",
         "Express",
@@ -193,7 +209,8 @@
         "ForgeSQL",
         "Drizzle ORM",
         "REST",
-        "GraphQL"
+        "GraphQL",
+        "WebSocket"
       ]
     },
     {
@@ -204,7 +221,8 @@
         "Docker",
         "Postman",
         "Figma",
-        "VS Code"
+        "VS Code",
+        "Supabase"
       ]
     }
   ],
@@ -212,7 +230,7 @@
     "school": "University of Science",
     "schoolEm": "/ VNUHCM",
     "degree": "B.S. Software Engineering · 2022 — 2026",
-    "gpa": "3.7",
+    "gpa": "3.69",
     "gpaSub": "GPA / 4.0"
   },
   "contact": {
@@ -220,7 +238,7 @@
       { "text": "Let's build" },
       { "text": "something real.", "italic": true }
     ],
-    "email": "trthngan101@gmail.com",
+    "email": "trthngan.it@gmail.com",
     "links": [
       {
         "label": "// Github",
@@ -239,8 +257,8 @@
       }
     ],
     "footer": {
-      "left": "© 2026 / NGAN.TRAN · ALL.RIGHTS.OK",
-      "right": "Handcoded · No templates"
+      "left": "© 2026 / NGAN.TRAN",
+      "right": "Thank you for visiting my portfolio!"
     }
   }
 }

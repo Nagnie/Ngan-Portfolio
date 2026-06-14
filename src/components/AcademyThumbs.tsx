@@ -1,9 +1,24 @@
 import type { AcademyCard } from "@/data/types";
-import { ProlearningSlideshow } from "./ProlearningSlideshow";
+import { ProjectSlideshow } from "./ProjectSlideshow";
+import { GALLERIES } from "@/data/galleryImages";
 
 export function AcademyThumb({ kind }: { kind: AcademyCard["thumb"] }) {
   if (kind === "prolearning") {
-    return <ProlearningSlideshow />;
+    return (
+      <ProjectSlideshow
+        slides={GALLERIES.prolearning.light}
+        label="PROLEARNING · SCREENSHOTS"
+      />
+    );
+  }
+
+  if (kind === "memorymap") {
+    return (
+      <ProjectSlideshow
+        slides={GALLERIES.memorymap.light}
+        label="MEMORYMAP · SCREENSHOTS"
+      />
+    );
   }
 
   if (kind === "lexi") {
