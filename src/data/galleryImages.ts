@@ -1,7 +1,12 @@
 import type { StaticImageData } from "next/image";
 
 export type Slide = { src: StaticImageData; alt: string };
-export type ThemedSlides = { light: Slide[]; dark: Slide[] };
+export type Orientation = "landscape" | "portrait";
+export type ThemedSlides = {
+  orientation: Orientation;
+  light: Slide[];
+  dark: Slide[];
+};
 
 /* eslint-disable @typescript-eslint/no-require-imports */
 
@@ -36,6 +41,7 @@ const memorymapDark: Slide[] = [
 export const GALLERIES: Record<string, ThemedSlides> = {
   // ProLearning has no dark screenshots yet — drop them into
   // src/data/images/prolearning/dark and list them here when ready.
-  prolearning: { light: prolearningLight, dark: [] },
-  memorymap: { light: memorymapLight, dark: memorymapDark },
+  prolearning: { orientation: "landscape", light: prolearningLight, dark: [] },
+  // MemoryMap is a mobile app — screenshots are portrait.
+  memorymap: { orientation: "portrait", light: memorymapLight, dark: memorymapDark },
 };

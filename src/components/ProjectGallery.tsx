@@ -37,9 +37,11 @@ export function ProjectGallery({ slides }: { slides: ThemedSlides }) {
   }, [prev, next, current.length]);
 
   const modes: Mode[] = ["light", "dark"];
+  const isPortrait = slides.orientation === "portrait";
+  const objectFit = isPortrait ? "contain" : "cover";
 
   return (
-    <div className="pl-gal">
+    <div className={`pl-gal${isPortrait ? " is-portrait" : ""}`}>
       {/* Theme toggle */}
       <div className="pl-gal-toolbar">
         <span className="pl-gal-mode-lbl">MODE</span>
@@ -73,7 +75,7 @@ export function ProjectGallery({ slides }: { slides: ThemedSlides }) {
                   alt={s.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 900px"
-                  style={{ objectFit: "cover", objectPosition: "top center" }}
+                  style={{ objectFit, objectPosition: isPortrait ? "center" : "top center" }}
                   priority={i === 0}
                 />
               </div>
@@ -111,7 +113,7 @@ export function ProjectGallery({ slides }: { slides: ThemedSlides }) {
                   alt={s.alt}
                   fill
                   sizes="200px"
-                  style={{ objectFit: "cover", objectPosition: "top center" }}
+                  style={{ objectFit, objectPosition: isPortrait ? "center" : "top center" }}
                 />
               </button>
             ))}

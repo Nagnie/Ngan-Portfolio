@@ -17,6 +17,7 @@ export function AcademyThumb({ kind }: { kind: AcademyCard["thumb"] }) {
       <ProjectSlideshow
         slides={GALLERIES.memorymap.light}
         label="MEMORYMAP · SCREENSHOTS"
+        orientation={GALLERIES.memorymap.orientation}
       />
     );
   }

@@ -1,13 +1,12 @@
-import { StatusBar } from "@/components/StatusBar";
-import { SideNav } from "@/components/SideNav";
-import { Hero } from "@/components/Hero";
-import { Marquee } from "@/components/Marquee";
-import { Work } from "@/components/Work";
-import { Academy } from "@/components/Academy";
-import { Stack } from "@/components/Stack";
-import { Education } from "@/components/Education";
-import { Contact } from "@/components/Contact";
-import { CustomCursor } from "@/components/CustomCursor";
+import { StatusBar } from '@/components/StatusBar';
+import { SideNav } from '@/components/SideNav';
+import { Hero } from '@/components/Hero';
+import { Work } from '@/components/Work';
+import { Academy } from '@/components/Academy';
+import { Stack } from '@/components/Stack';
+import { Education } from '@/components/Education';
+import { Contact } from '@/components/Contact';
+import { CustomCursor } from '@/components/CustomCursor';
 
 export default function Page() {
   return (
@@ -15,12 +14,11 @@ export default function Page() {
       <CustomCursor />
       <StatusBar />
 
-      <div className="page">
+      <div className='page'>
         <SideNav />
 
-        <main className="content">
+        <main className='content'>
           <Hero />
-          <Marquee />
           <Work />
           <Academy />
           <Stack />

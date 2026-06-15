@@ -2,11 +2,20 @@
 
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import type { Slide } from "@/data/galleryImages";
+import type { Slide, Orientation } from "@/data/galleryImages";
 
 const INTERVAL = 3800;
 
-export function ProjectSlideshow({ slides, label }: { slides: Slide[]; label: string }) {
+export function ProjectSlideshow({
+  slides,
+  label,
+  orientation = "landscape",
+}: {
+  slides: Slide[];
+  label: string;
+  orientation?: Orientation;
+}) {
+  const isPortrait = orientation === "portrait";
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
   const timerKey = useRef(0);
@@ -29,7 +38,7 @@ export function ProjectSlideshow({ slides, label }: { slides: Slide[]; label: st
 
   return (
     <div
-      className="pl-show"
+      className={`pl-show${isPortrait ? " is-portrait" : ""}`}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onClick={next}
@@ -44,7 +53,10 @@ export function ProjectSlideshow({ slides, label }: { slides: Slide[]; label: st
             alt={s.alt}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            style={{ objectFit: "cover", objectPosition: "top center" }}
+            style={{
+              objectFit: isPortrait ? "contain" : "cover",
+              objectPosition: isPortrait ? "center" : "top center",
+            }}
             priority={i === 0}
           />
         </div>

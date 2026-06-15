@@ -27,15 +27,15 @@
     "from": "Ho Chi Minh City",
     "to": "Anywhere",
     "title": [
-      { "text": "Frontend-" },
-      { "text": "leaning", "italic": true },
-      { "text": "fullstack.", "outline": true }
+      { "text": "Fullstack" },
+      { "text": "engineer,", "italic": true },
+      { "text": "end to end.", "outline": true }
     ],
     "avatarSrc": "/assets/avatar.png",
     "avatarTag": "NGAN",
-    "bio": "I'm <strong>Thao Ngan</strong> — <em>Frontend-focused developer</em> with 9 months of production experience building Atlassian Forge apps. Passionate about performance-heavy UIs and AI-integrated products.",
+    "bio": "I'm <strong>Thao Ngan</strong> — <em>Fullstack developer</em> with 10+ months of production experience building Atlassian Forge apps. Passionate about performance-heavy products and AI integration.",
     "stats": [
-      { "label": "Role", "value": "FS · FE-heavy" },
+      { "label": "Role", "value": "Fullstack" },
       { "label": "Shipped", "value": "3+ apps" },
       { "label": "GPA", "value": "3.7 / 4.0" }
     ]
@@ -98,6 +98,83 @@
   "academy": [
     {
       "idx": "[01]",
+      "tag": "2026 · PERSONAL · MOBILE",
+      "title": "MemoryMap",
+      "titleEm": "/ Map-based memories",
+      "description": "A cross-platform mobile app that pins your photos to the exact spot they happened — save memories on a map, share a real-time Duo Map with a partner, and capture moments offline.",
+      "stack": "REACT NATIVE · EXPO · SUPABASE",
+      "linkLabel": "CASE STUDY ↗",
+      "link": "/projects/memorymap",
+      "thumb": "memorymap",
+      "featured": true,
+      "slug": "memorymap",
+      "period": "2026",
+      "role": "Mobile · Solo",
+      "status": "In progress",
+      "repos": [
+        {
+          "label": "Mobile · React Native",
+          "href": "https://github.com/Nagnie/MemoryMapStory"
+        }
+      ],
+      "overview": [
+        "MemoryMap is a cross-platform iOS &amp; Android app built around one idea — <em>\"save memories where they actually happened, not in an endless feed.\"</em> You snap a photo, it's automatically geo-tagged, and it appears on a map as a pin at the exact spot it happened.",
+        "Beyond a personal map, two people can share a real-time <strong>Duo Map</strong> — Locket-style — joining via an invite code and seeing each other's memories appear live. The app is <strong>offline-first</strong>: capture a memory with no signal and it queues as a draft, then auto-syncs when you're back online."
+      ],
+      "features": [
+        {
+          "title": "Geo-tagged memories",
+          "body": "Snap a photo, auto-tag it with GPS and a reverse-geocoded place name, and pin it to the map at the exact spot."
+        },
+        {
+          "title": "Real-time Duo Map",
+          "body": "Share a map with a partner via invite code — Supabase Realtime presence shows live updates and online status, with two-color pins and All/Mine/Partner filters."
+        },
+        {
+          "title": "Offline-first capture",
+          "body": "An offline outbox queues memory drafts in AsyncStorage and auto-uploads them via NetInfo when the connection returns."
+        },
+        {
+          "title": "Custom map & clustering",
+          "body": "Full-screen map with a warm custom style, thumbnail memory pins, and proximity clustering built from scratch — no library."
+        },
+        {
+          "title": "Memory Journal",
+          "body": "A calendar view that groups memories by day straight from the cache, with per-day stats and a story viewer."
+        },
+        {
+          "title": "Reactions & proximity reminders",
+          "body": "Emoji reactions on memories, plus push notifications — anniversary reminders and a background task that nudges you when you walk near a past memory."
+        }
+      ],
+      "techStack": [
+        {
+          "label": "Mobile",
+          "items": ["React Native", "Expo 56", "expo-router", "NativeWind"]
+        },
+        {
+          "label": "Backend",
+          "items": [
+            "Supabase Auth",
+            "PostgreSQL + RLS",
+            "Realtime",
+            "Storage",
+            "Edge Functions"
+          ]
+        },
+        {
+          "label": "Maps & Location",
+          "items": ["react-native-maps", "expo-location", "expo-image-picker"]
+        },
+        {
+          "label": "State & Data",
+          "items": ["Zustand", "React Query", "AsyncStorage + NetInfo"]
+        }
+      ],
+      "contributions": "Designed and built the whole app solo — from the Supabase schema (profiles, memories, duo maps, reactions, push tokens) with row-level security and security-definer RPCs, to the React Native client. Implemented the offline outbox pattern, proximity clustering and custom map markers from scratch, real-time Duo Map presence over WebSocket, reverse geocoding, the calendar-based Memory Journal, share-as-card, and a background location task with anniversary push notifications via a scheduled Supabase Edge Function."
+    },
+    {
+      "idx": "[02]",
       "tag": "2025 → 2026 · THESIS · FULLSTACK",
       "title": "ProLearning",
       "titleEm": "/ AI learning system",
@@ -158,21 +235,6 @@
         { "label": "AI", "items": ["Gemini API"] }
       ],
       "contributions": "Owned the frontend architecture and led a full UI redesign mid-project to improve consistency and user experience. On the backend (Java Spring Boot), built and integrated several core modules including To-do, Goal tracking, Activity Log, and User Management, alongside various supporting features."
-    },
-    {
-      "idx": "[02]",
-      "tag": "2026 · PERSONAL · MOBILE",
-      "title": "MemoryMap",
-      "titleEm": "/ Map-based memories",
-      "description": "A cross-platform mobile app that pins your photos to the exact spot they happened — save memories on a map, share a real-time Duo Map with a partner, and capture moments offline.",
-      "stack": "REACT NATIVE · EXPO · SUPABASE",
-      "linkLabel": "CASE STUDY ↗",
-      "link": "/projects/memorymap",
-      "thumb": "memorymap",
-      "slug": "memorymap",
-      "period": "2026",
-      "role": "Mobile · Solo",
-      "status": "In progress"
     }
   ],
   "stack": [

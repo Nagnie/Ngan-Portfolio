@@ -314,7 +314,7 @@ section.sec::before {
   font-size: 18px;
   line-height: 1.55;
   color: var(--ink-2);
-  max-width: 48ch;
+  max-width: 52ch;
 }
 .hero-bio strong { color: var(--ink); font-weight: 500; }
 .hero-bio em {
@@ -801,7 +801,31 @@ section.sec::before {
   .pl-gal-arrow { width: 30px; height: 30px; font-size: 12px; }
 }
 
-/* ─── PROLEARNING SLIDESHOW ─── */
+/* Portrait (mobile app) gallery — taller frame, full screenshot shown */
+.pl-gal.is-portrait .pl-gal-main {
+  aspect-ratio: 10 / 16;
+  max-width: 360px;
+  margin: 0 auto;
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(var(--accent-rgb), 0.06), transparent 60%),
+    var(--bg-2);
+}
+.pl-gal.is-portrait .pl-gal-strip {
+  max-width: 540px;
+  margin: 0 auto;
+  gap: 8px;
+}
+.pl-gal.is-portrait .pl-gal-thumb {
+  aspect-ratio: 9 / 16;
+}
+.pl-gal.is-portrait .pl-gal-toolbar {
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .pl-gal.is-portrait .pl-gal-main { max-width: 280px; }
+}
+
+/* ─── PROJECT SLIDESHOW ─── */
 .pl-show {
   position: relative;
   width: 100%;
@@ -813,6 +837,11 @@ section.sec::before {
   border: 1px solid var(--line);
   border-radius: 3px;
   user-select: none;
+}
+.pl-show.is-portrait {
+  background:
+    radial-gradient(120% 70% at 50% 0%, rgba(var(--accent-rgb), 0.07), transparent 60%),
+    var(--bg-2);
 }
 .pl-slide {
   position: absolute;
